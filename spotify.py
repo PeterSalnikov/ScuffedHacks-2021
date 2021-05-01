@@ -6,27 +6,23 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import pandas as pd
 
 scope = "user-library-read"
-#
+
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
 target = sp.playlist_items(playlist_id='4gKMgvqgoB3j09i3J4Akhx?si=655b7f9d1c324f3f', fields='tracks,next')
 
-
-def show_tracks(results):
-    for i, item in enumerate(results['items']):
+# create list from tracks on playlist with format "ARTIST NAME"
+def save_tracks(playlist):
+    artist_track_list = []
+    for i, item in enumerate(playlist['items']):
         track = item['track']
-        print(
-            "   %d %32.32s %s" %
-            (i, track['artists'][0]['name'], track['name']))
+        artist_track_list.append(track['artists'][0]['name'] + " " + track['name'])
+    return artist_track_list
 
 
 tracks = target['tracks']
 
-# print(target['name'])
+track_list = save_tracks(tracks)
 
-show_tracks(tracks)
-
-# print(target['tracks']['name'])
-# df = pd.DataFrame(target)
-
-# print(df.to_string())
+df = pd.DataFrame(track_list, columns=["tracks"])
+df.to_csv('track_list.csv', index=False)
