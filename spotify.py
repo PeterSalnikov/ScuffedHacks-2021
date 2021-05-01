@@ -25,3 +25,5 @@ tracks = target['tracks']
 list = save_tracks(tracks)
 print(list)
 
+df = pd.DataFrame(list, columns=["tracks"])
+df.to_csv('tracklist.csv', index=False)

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e0997fd-9949-4241-bb65-a1cba7edfd29" name="Default Changelist" comment="added spotify.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e0997fd-9949-4241-bb65-a1cba7edfd29" name="Default Changelist" comment="tracks now saved as list">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotify.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="peter" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619905199124</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tracks now saved as list">
+      <created>1619905671881</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619905671881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,11 +334,12 @@
     <MESSAGE value="random files" />
     <MESSAGE value="added youtubecreate.py&#10;pip install --upgrade:&#10;google-api-python-client&#10;google-auth-oauthlib google-auth-httplib2" />
     <MESSAGE value="added spotify.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spotify.py" />
+    <MESSAGE value="tracks now saved as list" />
+    <option name="LAST_COMMIT_MESSAGE" value="tracks now saved as list" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ScuffedHacks_2021$youtubecreate.coverage" NAME="youtubecreate Coverage Results" MODIFIED="1619903267142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotifyread.coverage" NAME="spotifyread Coverage Results" MODIFIED="1619904589016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotify.coverage" NAME="spotify Coverage Results" MODIFIED="1619905578315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotify.coverage" NAME="spotify Coverage Results" MODIFIED="1619905894131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
