@@ -5,11 +5,19 @@ from spotipy.oauth2 import SpotifyOAuth
 from spotipy.oauth2 import SpotifyClientCredentials
 import pandas as pd
 
+def STRING_DESTRUCTION(str):
+    g = str[34:len(str)]
+    return g
+
+link = input('copy and paste your spotify playlist link: ')
+linkend = STRING_DESTRUCTION(link)
+
+
 scope = "user-library-read"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
-target = sp.playlist_items(playlist_id='4gKMgvqgoB3j09i3J4Akhx?si=655b7f9d1c324f3f', fields='tracks,next')
+target = sp.playlist_items(playlist_id=linkend, fields='tracks,next')
 
 # create list from tracks on playlist with format "ARTIST NAME"
 def save_tracks(playlist):
