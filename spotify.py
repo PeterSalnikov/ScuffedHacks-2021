@@ -11,19 +11,18 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
 target = sp.playlist_items(playlist_id='4gKMgvqgoB3j09i3J4Akhx?si=655b7f9d1c324f3f', fields='tracks,next')
 
-
-def save_tracks(results):
-    tracks_artists = []
-    for i, item in enumerate(results['items']):
+# create list from tracks on playlist with format "ARTIST NAME"
+def save_tracks(playlist):
+    artist_track_list = []
+    for i, item in enumerate(playlist['items']):
         track = item['track']
-        tracks_artists.append(track['artists'][0]['name'] + " " + track['name'])
-    return tracks_artists
+        artist_track_list.append(track['artists'][0]['name'] + " " + track['name'])
+    return artist_track_list
 
 
 tracks = target['tracks']
 
-list = save_tracks(tracks)
-print(list)
+track_list = save_tracks(tracks)
 
-df = pd.DataFrame(list, columns=["tracks"])
-df.to_csv('tracklist.csv', index=False)
+df = pd.DataFrame(track_list, columns=["tracks"])
+df.to_csv('track_list.csv', index=False)
