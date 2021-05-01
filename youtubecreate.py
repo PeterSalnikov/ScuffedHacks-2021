@@ -4,6 +4,8 @@ import requests
 import google_auth_oauthlib.flow
 import googleapiclient.discovery
 import googleapiclient.errors
+import pandas as pd
+
 
 scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
 playlist_id = input("Enter your empty Youtube playlist ID: ")
@@ -57,3 +59,8 @@ def playlist_input(playlistid, videoid, title_artist):
     pl_response= request.execute()
     return pl_response
 
+
+df = pd.read_csv('track_list.csv')
+
+for index, row in df.iterrows():
+    yt_search(row['tracks'])
