@@ -7,7 +7,7 @@ import googleapiclient.errors
 import pandas as pd
 
 
-scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
+scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
 
 def get_client():
@@ -30,19 +30,20 @@ def get_client():
 
 def yt_search(playlist_id,title_artist):
     """Searches for video using song title and artist and gets first result"""
-    request = client.youtube.search().list(
+    request = get_client().search().list(
         part="snippet",
         maxResults=1,
         q=title_artist
     )
     response = request.execute()
-    videoid = response[0]["videoid"]
-    playlist_input(videoid, playlist_id)
+    print(response)
+    videoid = response["items"][0]["id"]["videoId"]
+    playlist_input(playlist_id,videoid)
 
 
 def playlist_input(playlistid, videoid):
     """Adds to youtube playlist"""
-    request = client.youtube.playlistItems().insert(
+    request = get_client().playlistItems().insert(
         part="snippet",
         body={
             "snippet": {
@@ -55,15 +56,14 @@ def playlist_input(playlistid, videoid):
             }
         }
     )
-    pl_response= request.execute()
-    return pl_response
+    request.execute()
+    return print("")
 
 
 if __name__ == "__main__":
     playlist_id = input("Enter your empty Youtube playlist ID: ")
-    get_client()
 
-df = pd.read_csv('track_list.csv')
+    df = pd.read_csv('track_list.csv')
 
-for index, row in df.iterrows():
-    yt_search(playlist_id,row['tracks'])
+    for index, row in df.iterrows():
+        yt_search(playlist_id, row['tracks'])
