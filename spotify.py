@@ -9,7 +9,10 @@ def STRING_DESTRUCTION(str):
     g = str[34:len(str)]
     return g
 
+
 link = input('copy and paste your spotify playlist link: ')
+
+
 linkend = STRING_DESTRUCTION(link)
 
 
