@@ -7,7 +7,7 @@ import googleapiclient.errors
 import pandas as pd
 import time
 
-scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
+scopes = ["https://www.googleapis.com/auth/youtube"]
 
 
 # def get_client():
@@ -36,7 +36,6 @@ def yt_search(playlist_id,title_artist):
         q=title_artist
     )
     response = request.execute()
-    print(response)
     videoid = response["items"][0]["id"]["videoId"]
     playlist_input(playlist_id,videoid)
 
@@ -57,7 +56,8 @@ def playlist_input(playlistid, videoid):
         }
     )
     request.execute()
-    return print("")
+
+
 
 
 if __name__ == "__main__":
@@ -67,4 +67,4 @@ if __name__ == "__main__":
 
     for index, row in df.iterrows():
         yt_search(playlist_id, row['tracks'])
-        time.sleep(0.5)
+        time.sleep(2)
