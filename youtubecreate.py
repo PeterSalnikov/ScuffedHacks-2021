@@ -35,8 +35,8 @@ def yt_search(playlist_id,title_artist):
         maxResults=1,
         q=title_artist
     )
-    s_response = request.execute()
-    videoid = s_response[0].get("id").get("videoId")
+    response = request.execute()
+    videoid = response[0]["videoid"]
     playlist_input(videoid, playlist_id)
 
 

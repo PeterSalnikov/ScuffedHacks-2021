@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0997fd-9949-4241-bb65-a1cba7edfd29" name="Default Changelist" comment="added youtubecreate.py&#10;pip install --upgrade:&#10;google-api-python-client&#10;google-auth-oauthlib google-auth-httplib2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youtubecreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtubecreate.py" afterDir="false" />
-    </list>
+    <list default="true" id="3e0997fd-9949-4241-bb65-a1cba7edfd29" name="Default Changelist" comment="added youtubecreate.py&#10;pip install --upgrade:&#10;google-api-python-client&#10;google-auth-oauthlib google-auth-httplib2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +150,7 @@
       <workItem from="1619907459938" duration="198000" />
       <workItem from="1619907672133" duration="1994000" />
       <workItem from="1619911419869" duration="664000" />
-      <workItem from="1619912105694" duration="1356000" />
+      <workItem from="1619912105694" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="random files">
       <created>1619893202118</created>
@@ -176,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619896991328</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added youtubecreate.py&#10;pip install --upgrade:&#10;google-api-python-client&#10;google-auth-oauthlib google-auth-httplib2">
+      <created>1619913655740</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619913655740</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
