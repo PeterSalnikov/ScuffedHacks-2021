@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e0997fd-9949-4241-bb65-a1cba7edfd29" name="Default Changelist" comment="trying to fix yt_search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youtubecreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtubecreate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gwen" />
+        <entry key="$PROJECT_DIR$" value="reading-from-csv" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,6 +136,9 @@
       <list>
         <item itemvalue="Python.youtubecreate" />
         <item itemvalue="Python.String Parsing" />
+        <item itemvalue="Python.youtubecreate" />
+        <item itemvalue="Python.String Parsing" />
+        <item itemvalue="Python.youtubecreate" />
       </list>
     </recent_temporary>
   </component>
@@ -262,10 +264,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="trying to fix yt_search" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$youtubecreate.coverage" NAME="youtubecreate Coverage Results" MODIFIED="1619903267142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotifyread.coverage" NAME="spotifyread Coverage Results" MODIFIED="1619904589016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/spotify_py$spotify.coverage" NAME="spotify Coverage Results" MODIFIED="1619917943677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotify.coverage" NAME="spotify Coverage Results" MODIFIED="1619906105937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/spotify_py$youtubecreate.coverage" NAME="youtubecreate Coverage Results" MODIFIED="1619918835284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotifyread.coverage" NAME="spotifyread Coverage Results" MODIFIED="1619904201088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$youtubecreate.coverage" NAME="youtubecreate Coverage Results" MODIFIED="1619904160234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScuffedHacks_2021$spotify.coverage" NAME="spotify Coverage Results" MODIFIED="1619911335170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spotify_py$spotify.coverage" NAME="spotify Coverage Results" MODIFIED="1619918121379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spotify_py$youtubecreate.coverage" NAME="youtubecreate Coverage Results" MODIFIED="1619922236610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
