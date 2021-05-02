@@ -8,7 +8,7 @@ import pandas as pd
 
 
 scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
-playlist_id = input("Enter your empty Youtube playlist ID: ")
+
 
 def get_client():
     """ Taken from Youtube's Data API """
@@ -26,24 +26,23 @@ def get_client():
     credentials = flow.run_console()
     client = googleapiclient.discovery.build(
         api_service_name, api_version, credentials=credentials)
-
     return client
 
-
-def yt_search(title_artist):
+def yt_search(playlist_id,title_artist):
     """Searches for video using song title and artist and gets first result"""
-    request = youtube.search().list(
+    request = client.youtube.search().list(
         part="snippet",
         maxResults=1,
         q=title_artist
     )
     s_response = request.execute()
     videoid = s_response[0].get("id").get("videoId")
-    playlist_input(videoid, playlist_id, title_artist)
+    playlist_input(videoid, playlist_id)
 
-def playlist_input(playlistid, videoid, title_artist):
+
+def playlist_input(playlistid, videoid):
     """Adds to youtube playlist"""
-    request = youtube.playlistItems().insert(
+    request = client.youtube.playlistItems().insert(
         part="snippet",
         body={
             "snippet": {
@@ -60,7 +59,11 @@ def playlist_input(playlistid, videoid, title_artist):
     return pl_response
 
 
+if __name__ == "__main__":
+    playlist_id = input("Enter your empty Youtube playlist ID: ")
+    get_client()
+
 df = pd.read_csv('track_list.csv')
 
 for index, row in df.iterrows():
-    yt_search(row['tracks'])
+    yt_search(playlist_id,row['tracks'])
